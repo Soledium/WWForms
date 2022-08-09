@@ -1,0 +1,11 @@
+<div class="m-5">
+    <h1> El resultado de: </h1>
+
+    <form method="get" action="pages/create">
+        <input name="x">
+        <input name="y">
+        <input type="submit" value="Enviar">
+    </form>
+    <h1>Es: </h1>
+    <%= params[:x].to_i + params[:y].to_i %>
+</div>
